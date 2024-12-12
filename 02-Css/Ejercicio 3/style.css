@@ -1,0 +1,81 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Star Wars', sans-serif;
+    text-align: center;
+}
+
+/* Estilos para el Imperio (malos) */
+.imperio {
+    background-color: red;
+}
+
+/* Estilos para los Rebeldes */
+.rebeldes {
+    background-color: blue;
+}
+
+/* ID para Darth Vader */
+#darth-vader {
+    font-size: 1.5em;
+}
+
+/* ID para Luke */
+#luke {
+    font-style: italic;
+}
+
+/* Clase para Soldados */
+.soldados {
+    border: 5px dashed gray;
+    letter-spacing: 3px;
+}
+
+/* Clase Apoyo */
+.apoyo {
+    text-align: center;
+}
+
+/* Clase para Naves */
+.naves {
+    text-transform: uppercase;
+}
+
+/* Centrar imágenes de Droides */
+.droides {
+    text-align: center;
+}
+
+.droides img {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Estilos adicionales - Extra Credit */
+img {
+    height: 200px;
+    width: auto;
+}
+
+ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para nombres específicos */
+#darth-name {
+    color: crimson;
+    text-shadow: 2px 2px 4px #ff0000;
+}
+
+#luke-name {
+    color: skyblue;
+    text-shadow: 2px 2px 4px #1e90ff;
+}
+
+#originales {
+    color: gold;
+    font-weight: bold;
+    text-decoration: underline;
+}

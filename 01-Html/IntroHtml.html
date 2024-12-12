@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- === CABECERA DEL DOCUMENTO HTML === -->
+<head>
+    <!-- Meta Charset: Define la codificación de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Meta Viewport: Ajusta la escala en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la Página: Aparece en la pestaña del navegador -->
+    <title>Documento HTML Explicado</title>
+
+    <!-- Enlace a un archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- === ENCABEZADOS ===
+         Los encabezados son usados para títulos y subtítulos -->
+    <h1>Encabezado de Nivel 1 (h1)</h1>
+    <h2>Encabezado de Nivel 2 (h2)</h2>
+    <h3>Encabezado de Nivel 3 (h3)</h3>
+    <!-- h4, h5, y h6 siguen la misma estructura, siendo cada vez menos importantes -->
+
+    <!-- === PÁRRAFOS ===
+         La etiqueta <p> se usa para agregar párrafos de texto -->
+    <p>Este es un párrafo que contiene texto de ejemplo. La etiqueta <strong>strong</strong> resalta el texto en negrita, y la etiqueta <em>em</em> lo hace en cursiva.</p>
+
+
+    <!-- === IMÁGENES ===
+         La etiqueta <img> se usa para insertar imágenes -->
+    <img src="imagen.jpg" alt="Descripción de la imagen" width="300" height="200">
+
+    <!-- === LISTAS ===
+         HTML ofrece listas ordenadas y no ordenadas -->
+    <!-- Lista No Ordenada -->
+    <ul>
+        <li>Elemento de lista 1</li>
+        <li>Elemento de lista 2</li>
+    </ul>
+
+    <!-- Lista Ordenada -->
+    <ol>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+    </ol>
+
+    <!-- === FORMULARIOS ===
+         Los formularios recogen datos de los usuarios -->
+    <form action="/enviar" method="post">
+        <!-- Campo de Texto -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <!-- Campo de Correo -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <!-- Campo de Contraseña -->
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password">
+
+        <!-- Botón de Envío -->
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- === TABLAS ===
+         Las tablas muestran datos en filas y columnas -->
+    <table border="1">
+        <caption>Tabla de Ejemplo</caption>
+        <thead>
+            <tr>
+                <th>Encabezado 1</th>
+                <th>Encabezado 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dato 1</td>
+                <td>Dato 2</td>
+            </tr>
+            <tr>
+                <td>Dato 3</td>
+                <td>Dato 4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- === DIV Y SPAN ===
+         <div> agrupa elementos en bloques, <span> para elementos en línea -->
+    <div class="bloque">
+        <p>Este es un bloque de contenido en un <strong>div</strong>.</p>
+    </div>
+    <p>Aquí hay una palabra <span class="resaltado">resaltada</span> en el texto.</p>
+
+    <!-- === SECCIONES SEMÁNTICAS ===
+         Ayudan a estructurar el contenido de manera clara y SEO-friendly -->
+    <header>
+        <h1>Cabecera de la Página</h1>
+    </header>
+
+    <section>
+        <h2>Sección Principal</h2>
+        <p>Contenido de la sección principal.</p>
+    </section>
+
+    <aside>
+        <h3>Barra Lateral</h3>
+        <p>Contenido adicional o relacionado.</p>
+    </aside>
+
+    <footer>
+        <p>Pie de página de la página web.</p>
+    </footer>
+
+    <!-- === MULTIMEDIA ===
+         HTML permite insertar audio y video -->
+    <audio controls>
+        <source src="audio.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <!-- === COMENTARIOS ===
+         Los comentarios no se muestran en la página, solo en el código fuente -->
+    <!-- Este es un comentario -->
+
+</body>
+</html>

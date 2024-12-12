@@ -1,0 +1,216 @@
+/*
+ * === CSS Básico: Explicación Completa de Aspectos Clave ===
+ *
+ * Este archivo CSS está diseñado para ser educativo, con comentarios detallados
+ * sobre los diferentes aspectos y funciones de CSS.
+ */
+
+/* === 1. SELECTORES ===
+ *
+ * Los selectores se utilizan para especificar a qué elementos se aplicarán los estilos.
+ */
+
+/* 1.1 Selector de Tipo (Tag Selector): Selecciona todos los elementos de un tipo específico */
+p {
+    color: #333; /* Cambia el color del texto de todos los párrafos a gris oscuro */
+}
+
+/* 1.2 Selector de Clase (.nombreClase): Selecciona elementos que tienen una clase específica */
+.claseEjemplo {
+    background-color: #f0f0f0; /* Cambia el fondo de todos los elementos con esta clase a gris claro */
+    padding: 10px; /* Añade espacio interno de 10px alrededor del contenido */
+}
+
+/* 1.3 Selector de ID (#nombreID): Selecciona un elemento único por su ID */
+#idEjemplo {
+    font-size: 24px; /* Aumenta el tamaño de la fuente */
+    font-weight: bold; /* Aplica un peso de fuente en negrita */
+}
+
+/* 1.4 Selectores de Pseudo-clase: Aplican estilos en estados específicos, como `hover` */
+a:hover {
+    color: #ff0000; /* Cambia el color del enlace a rojo cuando el usuario lo pasa por encima */
+}
+
+/* === 2. PROPIEDADES DE COLOR ===
+ *
+ * En CSS, podemos aplicar colores a varios elementos, como el texto, fondo o bordes.
+ * Se puede especificar en HEX (#333333), RGB (rgb(51, 51, 51)), o nombre de color (black).
+ */
+
+/* Color de texto */
+h1 {
+    color: #0066cc; /* Color azul oscuro */
+}
+
+/* Fondo */
+div {
+    background-color: #e0e0e0; /* Fondo gris claro */
+}
+
+/* Bordes */
+.borderEjemplo {
+    border: 2px solid #000; /* Borde negro sólido de 2px */
+}
+
+/* === 3. TIPOGRAFÍA ===
+ *
+ * Las propiedades de tipografía definen la apariencia del texto.
+ */
+
+/* 3.1 Familia de Fuentes */
+body {
+    font-family: Arial, sans-serif; /* Fuente predeterminada para el cuerpo del documento */
+}
+
+/* 3.2 Tamaño y Grosor de la Fuente */
+h2 {
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: bold; /* Grosor de la fuente */
+}
+
+/* 3.3 Espaciado de Línea */
+p {
+    line-height: 1.5; /* Espaciado de línea para mejorar la legibilidad */
+}
+
+/* 3.4 Alineación del Texto */
+.textoCentrado {
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+/* === 4. ESPACIADO (MÁRGENES Y PADDING) ===
+ *
+ * Márgenes y padding controlan el espacio alrededor y dentro de un elemento.
+ */
+
+/* 4.1 Margin (Margen Externo) */
+.margenEjemplo {
+    margin: 20px; /* Añade 20px de margen alrededor del elemento */
+}
+
+/* 4.2 Padding (Espacio Interno) */
+.paddingEjemplo {
+    padding: 15px; /* Añade 15px de espacio interno alrededor del contenido */
+}
+
+/* 4.3 Margin y Padding Específicos */
+.margenPaddingEjemplo {
+    margin-top: 10px; /* Solo margen superior */
+    padding-left: 5px; /* Solo padding izquierdo */
+}
+
+/* === 5. BORDES Y SOMBRAS ===
+ *
+ * CSS permite crear bordes y sombras en los elementos.
+ */
+
+/* 5.1 Bordes */
+.bordeRedondeado {
+    border: 1px solid #333; /* Borde gris oscuro */
+    border-radius: 8px; /* Redondea las esquinas */
+}
+
+/* 5.2 Sombras */
+.sombra {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Aplica una sombra gris */
+}
+
+/* === 6. MODELO DE CAJA ===
+ *
+ * En CSS, cada elemento es una caja que contiene margen, borde, padding y contenido.
+ */
+
+/* Ajuste del Modelo de Caja */
+* {
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total del elemento */
+}
+
+/* === 7. FLEXBOX Y GRID ===
+ *
+ * CSS Flexbox y Grid son sistemas para alinear y distribuir elementos en un diseño.
+ */
+
+/* 7.1 Flexbox: Alinear elementos en filas o columnas */
+.contenedorFlex {
+    display: flex; /* Activa el modelo Flex */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+/* 7.2 Grid: Crear diseños de cuadrícula */
+.contenedorGrid {
+    display: grid; /* Activa el modelo Grid */
+    grid-template-columns: repeat(3, 1fr); /* Divide en 3 columnas de igual ancho */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+/* === 8. TRANSICIONES Y TRANSFORMACIONES ===
+ *
+ * CSS permite aplicar animaciones y cambios visuales en los elementos.
+ */
+
+/* 8.1 Transiciones */
+.boton {
+    background-color: #4CAF50; /* Color inicial */
+    transition: background-color 0.3s ease; /* Cambio suave de color */
+}
+
+.boton:hover {
+    background-color: #45a049; /* Cambia de color cuando se pasa el cursor */
+}
+
+/* 8.2 Transformaciones */
+.transformarEjemplo {
+    transform: rotate(15deg); /* Rota el elemento 15 grados */
+}
+
+/* === 9. RESPONSIVE DESIGN ===
+ *
+ * Con CSS Media Queries, podemos adaptar el diseño a diferentes tamaños de pantalla.
+ */
+
+@media (max-width: 600px) {
+    .contenedorFlex {
+        flex-direction: column; /* Cambia de fila a columna en pantallas pequeñas */
+    }
+}
+
+/* === 10. POSICIONAMIENTO ===
+ *
+ * Las propiedades de posicionamiento controlan la ubicación de los elementos.
+ */
+
+/* 10.1 Posicionamiento Relativo y Absoluto */
+.posicionRelativa {
+    position: relative; /* Posición relativa a su posición normal */
+    top: 10px; /* Mueve 10px hacia abajo desde la posición normal */
+}
+
+.posicionAbsoluta {
+    position: absolute; /* Posición absoluta en el contenedor */
+    left: 50px; /* 50px desde el borde izquierdo del contenedor */
+}
+
+/* === Fin del Documento CSS === */
+
+
+/* Listado de propiedades mas frecuentes: */
+/* animation: referencia abreviada para todas las propiedades de animación
+border: define el estilo, grosor y color del borde de un elemento.
+border-radius: define la curvatura de las esquinas de un borde.
+box-shadow: define una sombra alrededor de un elemento.
+cursor: define el tipo de cursor que se muestra cuando se coloca el cursor sobre un elemento.
+display: define cómo se muestra un elemento en la página (por ejemplo, como bloque o en línea).
+line-height: define la altura de línea del texto de un elemento.
+list-style: define la apariencia de los elementos de una lista (por ejemplo, si tienen viñetas o números).
+margin: define el espacio entre el borde de un elemento y otros elementos cercanos.
+opacity: define la opacidad de un elemento.
+overflow: define cómo se maneja el contenido de un elemento si es más grande que el espacio disponible.
+padding: define el espacio entre el borde y el contenido de un elemento.
+position: define cómo se posiciona un elemento en relación con otros elementos en la página. La veremos más adelante.
+transition: define la transición suave de un cambio en un elemento.
+visibility: define si un elemento es visible o no.
+z-index: define el orden de apilamiento de elementos superpuestos.
+grid-template-columns: define el número y tamaño de las columnas en una cuadrícula de diseño de rejilla.
+grid-template-rows: define el número y tamaño de las filas en una cuadrícula de diseño de rejilla. */
