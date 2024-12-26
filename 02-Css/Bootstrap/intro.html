@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Metadatos y configuración inicial -->
+    <meta charset="UTF-8"> <!-- Configura el documento en formato UTF-8 para soportar caracteres especiales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Permite que el sitio sea responsive. -->
+    <title>Introducción a Bootstrap</title> <!-- Título de la página -->
+
+    <!-- Incluir CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Carga Bootstrap desde un CDN. -->
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Zzz</a> <!-- Clase "navbar-brand" define el estilo del nombre o logo de la barra. -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span> <!-- Ícono que aparece en dispositivos pequeños para abrir el menú. -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"> <!-- Clase "ms-auto" alinea los elementos a la derecha. -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a> <!-- "nav-link" estiliza los enlaces del menú. -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenedor principal -->
+    <div class="container mt-5"> <!-- Clase "container" centra el contenido, y "mt-5" añade un margen superior. -->
+        <!-- Cabecera -->
+        <div class="text-center mb-4"> <!-- Clase "text-center" centra el texto horizontalmente. -->
+            <h1>Aprende Bootstrap</h1> <!-- Título principal. -->
+            <p class="lead">Un framework CSS poderoso para crear sitios web responsive.</p> <!-- Clase "lead" estiliza el texto para destacarlo como introducción. -->
+        </div>
+
+        <!-- Sistema de rejilla -->
+        <div class="row"> <!-- Clase "row" define una fila en el sistema de rejilla. -->
+            <div class="col-md-4"> <!-- "col-md-4" define que este div ocupará 4 columnas en pantallas medianas o más grandes. -->
+                <div class="card"> <!-- Clase "card" crea una tarjeta estilizada. -->
+                    <div class="card-body"> <!-- "card-body" contiene el contenido principal de la tarjeta. -->
+                        <h5 class="card-title">Diseño Responsive</h5>
+                        <p class="card-text">Crea diseños que se adaptan a cualquier dispositivo.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a> <!-- "btn" y "btn-primary" crean un botón azul. -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Componentes Reutilizables</h5>
+                        <p class="card-text">Usa clases predefinidas para elementos comunes como botones y formularios.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Personalización</h5>
+                        <p class="card-text">Añade tu propio estilo fácilmente utilizando CSS.</p>
+                        <a href="#" class="btn btn-primary">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3 mt-5"> <!-- Clase "bg-dark" aplica un fondo oscuro, "text-white" cambia el texto a blanco. -->
+        <p>&copy; 2024 Mi Sitio. Todos los derechos reservados CheffcitoJS.</p>
+    </footer>
+
+    <!-- Incluir JavaScript de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Carga el JavaScript necesario para interactividad. -->
+</body>
+</html>
