@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Git</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Git Info</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#descripcion">Descripción</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#caracteristicas">Características</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#funcionamiento">Cómo Funciona</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#comandos">Comandos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#recursos">Recursos Adicionales</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <section id="descripcion">
+            <h1>¿Qué es Git?</h1>
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <p class="card-text">Git es un sistema de control de versiones distribuido que permite rastrear cambios en el código y colaborar en proyectos. Es una herramienta esencial para desarrolladores, ya que facilita el trabajo en equipo, el manejo de diferentes versiones del código y la resolución de conflictos de manera eficiente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="caracteristicas" class="mt-5">
+            <h2>Características Principales</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Distribuido</h5>
+                            <p class="card-text">Cada desarrollador tiene una copia completa del repositorio, incluyendo su historial. Esto significa que no es necesario estar conectado a un servidor central para trabajar.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Velocidad</h5>
+                            <p class="card-text">Git está diseñado para realizar operaciones como commits, merges y comparaciones de cambios de manera rápida y eficiente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Seguridad</h5>
+                            <p class="card-text">Garantiza la integridad del código mediante funciones hash y protege el historial de modificaciones contra alteraciones no autorizadas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Flexible</h5>
+                            <p class="card-text">Se adapta a distintos flujos de trabajo, como el modelo centralizado, descentralizado o basado en ramas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="funcionamiento" class="mt-5">
+            <h2>¿Cómo Funciona Git?</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Repositorio</h5>
+                            <p class="card-text">Un repositorio es un contenedor para el código, su historial y las configuraciones relacionadas. Puede ser local o remoto, y es el núcleo del trabajo con Git.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Commit</h5>
+                            <p class="card-text">Un commit es una instantánea de los cambios realizados en el código. Cada commit tiene un identificador único y un mensaje descriptivo para documentar los cambios.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Branch</h5>
+                            <p class="card-text">Las ramas (branches) permiten trabajar en nuevas funcionalidades o correcciones sin afectar la rama principal. Esto facilita el desarrollo paralelo.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Merge</h5>
+                            <p class="card-text">La operación de merge combina los cambios de una rama en otra, resolviendo conflictos si es necesario y consolidando el trabajo del equipo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="comandos" class="mt-5">
+            <h2>Comandos Más Utilizados</h2>
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h3>Configuración Inicial</h3>
+                    <p>Estos comandos se utilizan para configurar el nombre y correo electrónico asociados con los commits en tu máquina.</p>
+                    <pre><code>git config --global user.name "Tu Nombre"
+git config --global user.email "tuemail@example.com"
+git config --list  # Verifica la configuración</code></pre>
+
+                    <h3>Flujo Básico</h3>
+                    <p>Comandos esenciales para empezar a trabajar con Git, desde inicializar un repositorio hasta registrar y compartir cambios en el código.</p>
+                    <pre><code>git init  # Inicializa un nuevo repositorio local
+
+git clone <url-del-repositorio>  # Clona un repositorio remoto a local
+
+git add <archivo>  # Agrega archivos al área de preparación (staging area)
+
+git commit -m "Mensaje del commit"  # Registra los cambios con un mensaje descriptivo
+
+git status  # Muestra el estado de los archivos en el repositorio
+
+git log  # Muestra el historial de commits
+
+git push  # Envía los cambios al repositorio remoto
+
+git pull  # Descarga y combina cambios del repositorio remoto</code></pre>
+
+                    <h3>Trabajo con Ramas</h3>
+                    <p>Los siguientes comandos permiten trabajar con ramas para gestionar diferentes líneas de desarrollo.</p>
+                    <pre><code>git branch <nombre-de-la-rama>  # Crea una nueva rama
+
+git checkout <nombre-de-la-rama>  # Cambia a una rama existente
+
+git checkout -b <nombre-de-la-rama>  # Crea y cambia a una nueva rama
+
+git merge <nombre-de-la-rama>  # Fusiona una rama en la actual
+
+git branch  # Lista todas las ramas</code></pre>
+
+                    <h3>Otros Comandos Útiles</h3>
+                    <p>Comandos adicionales para resolver problemas y manejar el historial.</p>
+                    <pre><code>git diff  # Muestra los cambios entre el repositorio y el área de preparación
+
+git reset <archivo>  # Quita un archivo del área de preparación
+
+git checkout -- <archivo>  # Descarta cambios no confirmados en un archivo
+
+git branch -d <nombre-de-la-rama>  # Elimina una rama
+
+git clone <url> <directorio>  # Clona un repositorio remoto en una ubicación específica</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="mt-5">
+            <h2>Recursos Adicionales</h2>
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <ul>
+                        <li>Imagen de un flujo de trabajo con ramas para visualizar la colaboración.</li>
+                        <li>Demostraciones prácticas con ejemplos reales de uso de Git.</li>
+                        <li>Ejercicios guiados para crear repositorios y trabajar con ramas.</li>
+                        <li>Introducción a GitHub o GitLab para aprender colaboración remota.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="bg-dark text-light text-center py-3 mt-5">
+        <p>© 2024 CheffcitoJS | Creado para el aprendizaje</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
